@@ -169,11 +169,9 @@ resumeautorotation(forcehotspot);
 
   <events name="button1events"
     onTourStart="showbutton1();"
-    hidetourcontrols="hidebutton1();"
-    showtourcontrols="showbutton1();"
     keep="true" />
   <action name="hidebutton1">set(layer[button1].visible, false);</action>
-  <action name="showbutton1">if(tour_displaycontrols,set(layer[button1].visible, true);,hidebutton1(););</action>
+  <action name="showbutton1">set(layer[button1].visible, true);</action>
 
 <layer name="button1TooltipStyle"
   keep="true"
@@ -1928,8 +1926,6 @@ resumeautorotation(forcehotspot);
 
   <events name="prevnexttheme1hideshowcontrolsevent" 
     onTourStart="prevnexttheme1showPrevNextControls();"
-    hidetourcontrols="prevnexttheme1hidePrevNextControls();" 
-    showtourcontrols="prevnexttheme1showPrevNextControls();" 
     keep="true"/>
   <action name="prevnexttheme1hidePrevNextControls">
     set(layer[prevnexttheme1btn_prev_pano].visible, false);
@@ -1991,17 +1987,13 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
   <events name="logo2events" 
     onTourStart="showlogo2();"
-    hidetourcontrols="hidelogo2();"
-    showtourcontrols="showlogo2();"
     keep="true" />
 
   <action name="hidelogo2">
     set(layer[logo2].visible, false);
   </action>
   <action name="showlogo2">
-    if (tour_displaycontrols,
       set(layer[logo2].visible, true);
-    );
   </action>
 
 
@@ -2061,11 +2053,9 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
   <events name="buttonevents"
     onTourStart="showbutton();"
-    hidetourcontrols="hidebutton();"
-    showtourcontrols="showbutton();"
     keep="true" />
   <action name="hidebutton">set(layer[button].visible, false);</action>
-  <action name="showbutton">if(tour_displaycontrols,set(layer[button].visible, true);,hidebutton(););</action>
+  <action name="showbutton">set(layer[button].visible, true);</action>
 
 <layer name="buttonTooltipStyle"
   keep="true"
@@ -2121,11 +2111,9 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
   <events name="button2events"
     onTourStart="showbutton2();"
-    hidetourcontrols="hidebutton2();"
-    showtourcontrols="showbutton2();"
     keep="true" />
   <action name="hidebutton2">set(layer[button2].visible, false);</action>
-  <action name="showbutton2">if(tour_displaycontrols,set(layer[button2].visible, true);,hidebutton2(););</action>
+  <action name="showbutton2">set(layer[button2].visible, true);</action>
 
 <layer name="button2TooltipStyle"
   keep="true"
@@ -2208,8 +2196,6 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
 
 	onTourStart="showKolorSocial_socialButton2();"
-	hidetourcontrols="hideKolorSocial_socialButton2();"
-	showtourcontrols="showKolorSocial_socialButton2();"
 
 />
 
@@ -2245,11 +2231,9 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
   <events name="button3events"
     onTourStart="showbutton3();"
-    hidetourcontrols="hidebutton3();"
-    showtourcontrols="showbutton3();"
     keep="true" />
   <action name="hidebutton3">set(layer[button3].visible, false);</action>
-  <action name="showbutton3">if(tour_displaycontrols,set(layer[button3].visible, true);,hidebutton3(););</action>
+  <action name="showbutton3">set(layer[button3].visible, true);</action>
 
 <layer name="button3TooltipStyle"
   keep="true"
@@ -2331,8 +2315,6 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
 
 	onTourStart="showKolorSocial_socialButton1();"
-	hidetourcontrols="hideKolorSocial_socialButton1();"
-	showtourcontrols="showKolorSocial_socialButton1();"
 
 />
 
@@ -2969,8 +2951,6 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
   </action>
 
   <events name="panoramacomboboxEvents"
-    hidetourcontrols="panoramacomboboxHide();"
-    showtourcontrols="panoramacomboboxShow();"
     onnewpano="panoramacomboboxOnPanorama();"
     changetourlanguage="panoramacomboboxUpdateLanguage();"
     keep="true"
@@ -3481,7 +3461,7 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
          capture="false"
          handcursor="false"
          interactivecontent="false"
-         alpha="0"
+         alpha="1"
          visible="true"
          css="
          text-align:center;
@@ -3497,16 +3477,59 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 <!-- id : progressbar -->
 <!-- ********** -->
 
-  <progress showwait.flash="none"
+  <progress showwait.flash="loopings(
+				0xff7b00,
+				15,15,
+				0,0,
+				0xffffff,8,
+				0,0,center
+				)"
 			showreloads.flash="false"
 			parent=""
 			/>
 
 
+  <layer name="progressbar_bg"
+    align="center"
+    bgcolor="0x000000"
+    bgalpha="1.0"
+    bgborder="0"
+    onclick="progressbar_stop();"
+    enabled="true"
+    handcursor="false"
+    bgcapture="true"
+    x="0" y="50"
+    type="container"
+    width="200" height="10"
+    visible="true"
+    keep="true">
+      <layer name="progressbar_bar" 
+        align="topleft"
+        bgcolor="0xdd9300"
+        bgalpha="1.0"
+        x="0" y="0"
+        type="container"
+        width="0%"
+        height="100%"
+        enabled="false"
+        bgshadow="0 0 2 0 0x000000 0.6 inset"
+        keep="true"
+        />
+  </layer>
   <action name="progressbar_start">
     if(scene[get(xml.scene)].video,
       progressbar_stop();
     ,
+      mul(progress_val, get(progress.progress), 100);
+      txtadd(progress_percent, get(progress_val),"%");
+      set(layer[progressbar_bar].width, get(progress_percent));
+    if (device.html5, 
+      mul(xcrop, layer[progressbarwheel].frame, 64);
+      txtadd(layer[progressbarwheel].crop, get(xcrop), '|0|64|64');
+      
+      inc(layer[progressbarwheel].frame);
+      if(layer[progressbarwheel].frame GE layer[progressbarwheel].frames, set(layer[progressbarwheel].frame,0));
+    );
       delayedcall(progressbar_progresscall, 0.1,progressbar_start());
       if(progress_val == 100,
         progressbar_stop();
@@ -3515,9 +3538,24 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
   </action>
   <action name="progressbar_stop">
     stopdelayedcall(progressbar_progresscall);
+    set(layer[progressbar_bg].visible, false);
+    set(layer[progressbar_bar].width, "0%");
+    if (device.html5, set(layer[progressbarwheel].visible, false););
   </action>
-  <events name="progressbar_events" onloadcomplete="progressbar_stop();" onxmlcomplete="progressbar_start();" keep="true" />
+  <events name="progressbar_events" onloadcomplete="progressbar_stop();" onxmlcomplete="if (device.html5,set(layer[progressbarwheel].visible, true););set(layer[progressbar_bg].visible, true);progressbar_start();" keep="true" />
 
+  <!-- loading wheel -->
+  <layer name="progressbarwheel"
+         keep="true"
+         devices="html5"
+         visible="false"
+         url="%FIRSTXML%/graphics/progressbarandloopings/loadingwheel.png"
+         crop="0|0|64|64"
+         align="center"
+         x="0" y="0"
+         frame="0" frames="12"
+         width="30"
+         height="30" />
 
 <!-- ********** -->
 <!-- Gallery -->
@@ -3657,6 +3695,19 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 	/>
 
 <!-- ********** -->
+<!-- Hide interface on idle -->
+<!-- id : hideonidle -->
+<!-- ********** -->
+    <events onxmlcomplete="set(idletime,15.0);" 
+		    onidle="
+					 
+					 
+					 
+				 "/>
+
+
+
+<!-- ********** -->
 <!-- Other Descriptions -->
 <!-- id : description1 -->
 <!-- ********** -->
@@ -3695,7 +3746,7 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_description1')" type="string" />
 		<option name="close_on_click" value="true" type="bool" />
 		<option name="close_onclick_callback" value="invokeKrFunction('closeKolorAreaCallbackClick_description1')" type="string" />
-		<option name="zorder" value="22" type="int" />
+		<option name="zorder" value="24" type="int" />
 		<option name="use_i18n" value="true" type="bool" />
 	</settings>
 </ptplugin>
@@ -3907,7 +3958,7 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 		<option name="close_text" value="websiteViewerclose_text" type="string" />
 
 		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_websiteViewer')" type="string" />
-		<option name="zorder" value="23" type="int" />
+		<option name="zorder" value="25" type="int" />
 		<option name="use_i18n" value="true" type="bool" />
 	</settings>
 	<internaldata>
@@ -3978,6 +4029,105 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 	onremovedisplayedobject="ifnot(ptplugin[websiteViewer].currentCall,if(ptplugin[websiteViewer].isOpen,closeKolorBox_websiteViewer();););"
 	changetourlanguage="changeLanguage_websiteViewer();"
 	/>
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+  <!-- Tour Information -->
+  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
+  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
+
+
+<action name="viewControlZoomIn">
+	if(%1,
+		if(%2,
+			if(%2 LT view.fovmin,
+				zoomto(get(view.fovmin));
+			,
+				if(%2 LT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, -1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, -1);
+	);
+</action>
+<action name="viewControlZoomOut">
+	if(%1,
+		if(%2,
+			if(%2 GT view.fovmax,
+				zoomto(get(view.fovmax));
+			,
+				if(%2 GT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, +1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, +1);
+	);
+</action>
+<action name="viewControlZoomStop">
+	set(fov_moveforce, 0);
+</action>
+
+	<!-- WebVR plugin for VR availability tests -->
+
+	<plugin name="ptpvrmode" devices="html5" keep="true"
+		url="%FIRSTXML%/graphics/webvr.js"
+		mobilevr_support="true"
+		mobilevr_fake_support="true"
+		vr_cursor=""
+		vr_cursor_enabled="false"
+		onavailable="delayedcall(1, checkVrAvailability(););"
+		onunavailable="checkVrUnavailable();"
+		/>
+	<action name="checkVrAvailability">
+		if(plugin[ptpvrmode],
+			if (plugin[ptpvrmode].isavailable,
+				set(tour_vrdevices, true);
+				events.dispatch(onvravailable);
+			,
+				set(tour_vrdevices, false);
+			);
+		,
+			checkVrUnavailable();
+		);
+	</action>
+	<action name="checkVrUnavailable">
+		set(tour_vrdevices, false);
+		events.dispatch(onvrunavailable);
+	</action>
+  <!-- Hide / Show Thumbnails -->
+  <action name="hideTourThumbnails">set(tour_displaythumbnails, false);events.dispatch(hidetourthumbnails);</action>
+  <action name="showTourThumbnails">set(tour_displaythumbnails, true); events.dispatch(showtourthumbnails);</action>
+
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
 
   <!-- Sounds Management -->
   <plugin name="soundinterface"
@@ -4469,10 +4619,87 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
     );
   </action>
 
-  <!-- FLOORPLAN -->
-  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
-  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
+<action name="setViewNormal">
+	stopSetViewTweens();
+	if(current_view_isflat === true,
+		setViewNonFlat(VFOV);
+	);
+	setViewNormalComplete();
+</action>
 
+<action name="setViewNormalComplete">
+	set(view.fisheyefovlink, 0.5);
+	set(view.fovmax, get(panoview.fovmax));
+	tween(view.architectural, 0.0, distance(1.0, 0.45));
+	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+	tween(view.fisheye, 0.0, distance(1.0, 0.45),
+		set(view.stereographic,false);
+	);
+</action>
+
+<krpano normalViewActivated="true" />
+<action name="stopSetViewTweens">
+	stoptween(view.fov);
+	stoptween(view.vlookat);
+	stoptween(view.fisheye);
+	stoptween(view.architectural);
+	stoptween(view.pannini);
+</action>
+
+<action name="setViewArchitectural">
+	if(normalViewActivated,stopSetViewTweens(););
+	if(current_view_isflat === true,
+		setViewNonFlat(VFOV);
+	);
+	setViewArchitecturalComplete();
+</action>
+
+<action name="setViewArchitecturalComplete">
+	set(view.fovmax, get(panoview.fovmax));
+	set(view.fisheyefovlink, 0.5);
+	tween(view.architectural, 1.0, distance(1.0, 0.45));
+	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.fisheye, 0.0, distance(1.0, 0.45), easeOutQuad, 
+		set(view.stereographic,false);
+		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	);
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+</action>
+
+<action name="setViewFisheye">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, panoview.hmax, panoview.hmin);
+		if (viewhfov == 360,
+			sub(viewvfov, panoview.vmax, panoview.vmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		if(normalViewActivated,stopSetViewTweens(););
+		if(current_view_isflat === true,
+			setViewNonFlat(VFOV);
+		);
+		setViewFisheyeComplete();
+	);
+</action>
+
+<action name="setViewFisheyeComplete">
+	set(view.fisheyefovlink, 1.5);
+	set(view.fovmax, get(panoview.fovmax));
+	tween(view.architectural, 0.0, distance(1.0, 0.30));
+	tween(view.fisheye, 0.0, distance(1.0, 0.30), easeOutQuad,
+		set(view.stereographic,false);
+		tween(view.fisheye, 0.45, distance(1.0, 0.75));
+		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	);
+	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+</action>
 
 <action name="setViewLittlePlanet">
 	set(sceneisfull360, false);
@@ -4509,7 +4736,7 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 	tween(view.fov, 150, distance(179, 0.75));
 </action>
 
-<action name="setViewFisheyeBall">
+<action name="setViewStereographic">
 	set(sceneisfull360, false);
 	if(scene[get(xml.scene)].full360,
 		sub(viewhfov, panoview.hmax, panoview.hmin);
@@ -4525,46 +4752,24 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 		if(current_view_isflat === true,
 			setViewNonFlat(VFOV);
 		);
-		setViewFisheyeBallComplete();
+		setViewStereographicComplete();
 	);
 </action>
 
-<action name="setViewFisheyeBallComplete">
-	set(view.fisheyefovlink, 1.5);
-	tween(view.architectural, 0.0, distance(1.0, 0.30));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	if(panoview.fovmax LE 179, set(view.fovmax, 179);, set(view.fovmax, get(panoview.fovmax)); );
-	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	tween(view.fisheye, 1.0, distance(1.0, 0.45), easeOutQuad,
-		set(view.stereographic,false);
-		tween(view.fov, 179, 4.0);
-	);
-</action>
-
-<action name="setViewArchitectural">
-	if(normalViewActivated,stopSetViewTweens(););
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewArchitecturalComplete();
-</action>
-
-<action name="setViewArchitecturalComplete">
+<action name="setViewStereographicComplete">
+	set(backtonormalfirst,false);
+	if(view.pannini GE 1.0, set(backtonormalfirst,true));
+	if(view.stereographic == false, set(backtonormalfirst,true));
+	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
+	tween(view.architectural, 0.0, 0.25);
 	set(view.fovmax, get(panoview.fovmax));
-	set(view.fisheyefovlink, 0.5);
-	tween(view.architectural, 1.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fisheye, 0.0, distance(1.0, 0.45), easeOutQuad, 
-		set(view.stereographic,false);
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	);
+	set(view.fisheyefovlink, 1.5);
+	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	set(view.stereographic, true);
+	tween(view.fisheye, 1.0, distance(1.0, 0.75));
+	tween(view.vlookat, get(panoview.v), 1.25);
 	tween(view.fov, get(panoview.fov), distance(50, 0.45));
 </action>
-
-  <!-- Hide / Show Thumbnails -->
-  <action name="hideTourThumbnails">set(tour_displaythumbnails, false);events.dispatch(hidetourthumbnails);</action>
-  <action name="showTourThumbnails">set(tour_displaythumbnails, true); events.dispatch(showtourthumbnails);</action>
-
 
 <action name="setViewPannini">
 	set(sceneisfull360, false);
@@ -4637,58 +4842,7 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 
 <events name="viewPanniniEvents" onviewchanged="if(view.pannini == 1.0,applyLimitsForPannini(););" devices="webgl.or.flash" keep="true" />
 
-  <!-- Fullscreen Management -->
-  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
-  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
-  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
-
-  
-  <events name="krpanoExitFullscreenEvent"
-    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
-    keep="true" />
-
-  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
-  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
-  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
-  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
-  
-  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
-
-  <!-- Tour Information -->
-  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
-  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
-
-
-<action name="setViewNormal">
-	stopSetViewTweens();
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewNormalComplete();
-</action>
-
-<action name="setViewNormalComplete">
-	set(view.fisheyefovlink, 0.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-	tween(view.fisheye, 0.0, distance(1.0, 0.45),
-		set(view.stereographic,false);
-	);
-</action>
-
-<krpano normalViewActivated="true" />
-<action name="stopSetViewTweens">
-	stoptween(view.fov);
-	stoptween(view.vlookat);
-	stoptween(view.fisheye);
-	stoptween(view.architectural);
-	stoptween(view.pannini);
-</action>
-
-<action name="setViewStereographic">
+<action name="setViewFisheyeBall">
 	set(sceneisfull360, false);
 	if(scene[get(xml.scene)].full360,
 		sub(viewhfov, panoview.hmax, panoview.hmin);
@@ -4704,128 +4858,25 @@ getmessage(urltoopen,logo2websiteurl);openurl(get(urltoopen),_blank);
 		if(current_view_isflat === true,
 			setViewNonFlat(VFOV);
 		);
-		setViewStereographicComplete();
+		setViewFisheyeBallComplete();
 	);
 </action>
 
-<action name="setViewStereographicComplete">
-	set(backtonormalfirst,false);
-	if(view.pannini GE 1.0, set(backtonormalfirst,true));
-	if(view.stereographic == false, set(backtonormalfirst,true));
-	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
-	tween(view.architectural, 0.0, 0.25);
-	set(view.fovmax, get(panoview.fovmax));
+<action name="setViewFisheyeBallComplete">
 	set(view.fisheyefovlink, 1.5);
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	set(view.stereographic, true);
-	tween(view.fisheye, 1.0, distance(1.0, 0.75));
-	tween(view.vlookat, get(panoview.v), 1.25);
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-</action>
-
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
-
-<action name="viewControlZoomIn">
-	if(%1,
-		if(%2,
-			if(%2 LT view.fovmin,
-				zoomto(get(view.fovmin));
-			,
-				if(%2 LT view.fov,
-					zoomto(%2);
-				);
-			);
-		,
-			set(fov_moveforce, -1);
-			delayedcall(0.1, viewControlZoomStop());
-		);
-	,
-		set(fov_moveforce, -1);
-	);
-</action>
-<action name="viewControlZoomOut">
-	if(%1,
-		if(%2,
-			if(%2 GT view.fovmax,
-				zoomto(get(view.fovmax));
-			,
-				if(%2 GT view.fov,
-					zoomto(%2);
-				);
-			);
-		,
-			set(fov_moveforce, +1);
-			delayedcall(0.1, viewControlZoomStop());
-		);
-	,
-		set(fov_moveforce, +1);
-	);
-</action>
-<action name="viewControlZoomStop">
-	set(fov_moveforce, 0);
-</action>
-
-<action name="setViewFisheye">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewFisheyeComplete();
-	);
-</action>
-
-<action name="setViewFisheyeComplete">
-	set(view.fisheyefovlink, 1.5);
-	set(view.fovmax, get(panoview.fovmax));
 	tween(view.architectural, 0.0, distance(1.0, 0.30));
-	tween(view.fisheye, 0.0, distance(1.0, 0.30), easeOutQuad,
+	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	if(panoview.fovmax LE 179, set(view.fovmax, 179);, set(view.fovmax, get(panoview.fovmax)); );
+	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	tween(view.fisheye, 1.0, distance(1.0, 0.45), easeOutQuad,
 		set(view.stereographic,false);
-		tween(view.fisheye, 0.45, distance(1.0, 0.75));
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+		tween(view.fov, 179, 4.0);
 	);
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
 </action>
 
-	<!-- WebVR plugin for VR availability tests -->
+  <!-- FLOORPLAN -->
+  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
+  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
 
-	<plugin name="ptpvrmode" devices="html5" keep="true"
-		url="%FIRSTXML%/graphics/webvr.js"
-		mobilevr_support="true"
-		mobilevr_fake_support="true"
-		vr_cursor=""
-		vr_cursor_enabled="false"
-		onavailable="delayedcall(1, checkVrAvailability(););"
-		onunavailable="checkVrUnavailable();"
-		/>
-	<action name="checkVrAvailability">
-		if(plugin[ptpvrmode],
-			if (plugin[ptpvrmode].isavailable,
-				set(tour_vrdevices, true);
-				events.dispatch(onvravailable);
-			,
-				set(tour_vrdevices, false);
-			);
-		,
-			checkVrUnavailable();
-		);
-	</action>
-	<action name="checkVrUnavailable">
-		set(tour_vrdevices, false);
-		events.dispatch(onvrunavailable);
-	</action>
+
 </krpano>
