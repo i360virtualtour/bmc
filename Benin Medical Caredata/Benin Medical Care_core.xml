@@ -3,7 +3,7 @@
   <!-- Global variables used by actions and plugins -->
   <krpano
         tour_soundson="true"
-        tour_soundsvolume="77"
+        tour_soundsvolume="47"
         tour_autotourenabled="false"
         tour_autorotateenabled="false"
         tour_controlmodemousetype="drag"
@@ -27,7 +27,7 @@
 
 
   <krpano vrtourdevice.desktop="desktop" vrtourdevice.tablet="tablet" vrtourdevice.mobile="mobile" />
-  <krpano vrtourdevicescale.desktop="1.0" vrtourdevicescale.tablet="1.15" vrtourdevicescale.mobile="1.25" />
+  <krpano vrtourdevicescale.desktop="1.0" vrtourdevicescale.tablet="1.2" vrtourdevicescale.mobile="1.3" />
   <action name="vrtourcurrentscale" autorun="preinit">
     mul(stagescale,get(vrtourdevicescale));
   </action>
@@ -69,7 +69,9 @@
     events.dispatch(hotspots_visibility_changed);
   </action>
 
-  <events name="hideShowHotspotsOnNewPanoEvent" onPanoStart="hideShowHotspotsOnNewPanoAction" keep="true"/>
+  <krpano hideShowHotspotsOnNewPanoState="false" />
+
+  <events name="hideShowHotspotsOnNewPanoEvent" onTourStart="set(hideShowHotspotsOnNewPanoState,true);hideShowHotspotsOnNewPanoAction" onPanoStart="if(hideShowHotspotsOnNewPanoState,hideShowHotspotsOnNewPanoAction);" keep="true"/>
   <action name="hideShowHotspotsOnNewPanoAction">
     set(nb_spots, get(hotspot.count));
     if (nb_spots != 0,
@@ -87,116 +89,104 @@
       );
       events.dispatch(onPanoStart);
     ,
-    ifnot (tour_firststartactiondone,
 
-      set(sceneisfull360, false);
-      if (scene[get(xml.scene)].full360,
-        sub(viewhfov, panoview.hmax, panoview.hmin);
-        if (viewhfov == 360,
-          sub(viewvfov, panoview.vmax, panoview.vmin);
-          if (viewvfov == 180,
-            set(sceneisfull360, true);
-          );
-        );
-      );
-
-      
-      stoptween(view.fov);
-      stoptween(view.fovmax);
-      stoptween(view.hlookat);
-      stoptween(view.vlookat);
-      stoptween(view.fisheye);
-
-      if (sceneisfull360 AND (device.webgl OR device.flash),
-	    setlittleplanet();
-      );
-
-
-    ifnot (sceneisfull360,
-      
-      set(view.fovmax, get(panoview.fovmax));
-      set(view.hlookat, get(panoview.h));
-      set(view.vlookat, get(panoview.v));
-      set(view.fisheye, 0.0);
-      set(view.architectural, 0.0);
-      set(view.stereographic, false);
-      set(view.pannini, 0.0);
-      set(view.fisheyefovlink, 0.5);
-      set(view.fov, get(panoview.fov));
-
-      ifnot (tour_firststartactiondone,
-        events.dispatch(onTourStart);
-      );
-      events.dispatch(onPanoStart);
-    );
 
     set(tour_firststartactiondone, true);
-    ,
-      events.dispatch(onPanoStart, true);
-    );
+    events.dispatch(onPanoStart, true);
     );
   </action>
 
-  <action name="startLittlePlanetIntroEffect">
-    if(tour_firstlittleplanet,
-      set(sceneisfull360, false);
-      if (scene[get(xml.scene)].full360,
-        sub(viewhfov, panoview.hmax, panoview.hmin);
-        if (viewhfov == 360,
-          sub(viewvfov, panoview.vmax, panoview.vmin);
-          if (viewvfov == 180,
-            set(sceneisfull360, true);
-          );
+
+  <layer name="splashscreenlayerbg"
+         keep="true"
+         align="center"
+         type="container"
+         width="100%" height="100%"
+         bgalpha="0.74117647058823533"
+         bgcolor="0xb0b0b0"
+         preload="true"
+         onclick="hideintroimage(true);"
+         bgcapture="true"
+         zorder="98"
+         enabled="true"/>
+  <action name="preload_splashscreen" autorun="preinit">
+    addlayer(splashscreenlayer);
+    set(layer[splashscreenlayer].visible, true);
+    set(layer[splashscreenlayer].align, center);
+    set(layer[splashscreenlayer].zorder, 99);
+    set(layer[splashscreenlayer].keep, true);
+    set(layer[splashscreenlayer].onclick, hideintroimage(true));
+    set(layer[splashscreenlayer].alpha, 1.0);
+
+    set(layer[splashscreenlayer].onloaded, resize_splashscreen();autohideintroimage(););
+    set(layer[splashscreenlayer].url, '%FIRSTXML%/graphics/splash.png');
+  </action>
+  <action name="resize_splashscreen">
+    if(layer[splashscreenlayer].url,
+      set(resizedwidth, get(layer[splashscreenlayer].width));
+      set(resizedheight, get(layer[splashscreenlayer].height));
+      set(resizedstagewidth, get(stagewidth));
+      set(resizedstageheight, get(stageheight));
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+        delete(tempresizedheight);
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+        delete(tempresizedwidth);
+      );
+      set(layer[splashscreenlayer].width , get(resizedwidth));
+      set(layer[splashscreenlayer].height, get(resizedheight));
+      delete(resizedstagewidth,resizedwidth,resizedstageheight,resizedheight);
+    ,
+      delayedcall(0.2,resize_splashscreen(););
+    );
+  </action>
+  <action name="hideintroimage">
+    stopdelayedcall(hideintroimagecall);
+    if(device.desktop AND !device.safari AND !device.chrome,
+      tween(layer[splashscreenlayer].alpha, 0.0, 0.5, default,
+        tween(layer[splashscreenlayerbg].alpha , 0.0, 0.5, default,
+          hideintroimagetreatment();
         );
       );
-      if (sceneisfull360,
-        fromlittleplanetintrotonormalview();
-      );
-    );
-  </action>
-
-  <action name="setlittleplanet">
-    set(view.architectural, 0.0);
-    set(view.hlookat, get(panoview.h));
-    set(view.vlookat, 90);
-    set(view.pannini, 0.0);
-    if(panoview.fovmax LE 150,
-      set(view.fovmax, 150);
     ,
-      set(view.fovmax, get(panoview.fovmax));
-    );
-    set(view.stereographic, true);
-    set(view.fisheyefovlink, 1.5);
-    set(view.fisheye, 1.0);
-    set(view.fov, 150);
 
-    events.dispatch(onStartLittlePlanetIntroduction);
-  </action>
-  <action name="fromlittleplanetintrotonormalview">
-	tweennormalview();
-  </action>
-  <action name="tweennormalview">
-    hideTooltip();
-    tween(view.fovmax, get(panoview.fovmax), 3, easeoutquad);
-    tween(view.hlookat,  get(panoview.h), 3, easeoutquad);
-    tween(view.vlookat, get(panoview.v), 3, easeoutquad);
-    if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), 3, easeoutquad); );
-    tween(view.pannini, 0.0, 3, easeoutquad);
-    tween(view.fisheye, 0.0, 3, easeoutquad,
-      set(view.architectural, 0.0);
-      set(view.stereographic, false);
-      set(view.fisheyefovlink, 0.5);
+      if(%1 == true,
 
-      
-      events.dispatch(onEndLittlePlanetIntroduction, true);
-      if (tour_firstlittleplanet,
-        events.dispatch(onTourStart, true);
-        set(tour_firstlittleplanet, false);
+          if(device.mobile OR device.tablet OR device.safari OR device.chrome,
+
+            ptp_audio_start();
+          );
       );
-      events.dispatch(onPanoStart, true);
+
+      hideintroimagetreatment();
     );
   </action>
+  <action name="hideintroimagetreatment">
+    removelayer(splashscreenlayer);
 
+    events.dispatch(onTourStart, true);
+    removelayer(splashscreenlayerbg);
+  </action>
+  <action name="autohideintroimage">
+    hideTooltip();
+    delayedcall(hideintroimagecall, 7, hideintroimage() ); 
+  </action>
+
+  <action name="skipintroaction">
+    stopdelayedcall(hideintroimagecall);
+    removelayer(splashscreenlayerbg);
+    removelayer(splashscreenlayer);
+   </action>
 
 
 
