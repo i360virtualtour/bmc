@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[BMC]]></data>
+  <data name="en_project_author_name"><![CDATA[Developed by "www.i360Limited.com"]]></data>
+  <data name="en_project_author_url"><![CDATA[http://www.i360limited.com/]]></data>
+
+
+
+  <data name="en_pano78_title"><![CDATA[Hospital Front]]></data>
+  <data name="en_spotpoint94_tooltip"><![CDATA[Reception]]></data>
+  <data name="en_spotpoint95_tooltip"><![CDATA[A&E Ambulance Point]]></data>
+
+
+  <data name="en_pano84_title"><![CDATA[Night View Front]]></data>
+  <data name="en_spotpoint101_tooltip"><![CDATA[Reception]]></data>
+  <data name="en_spotpoint102_tooltip"><![CDATA[A&E Ambulance Point]]></data>
+
+
+  <data name="en_pano79_title"><![CDATA[Ambulance Point]]></data>
+  <data name="en_spotpoint96_tooltip"><![CDATA[Front Diagnostics]]></data>
+  <data name="en_spotpoint97_tooltip"><![CDATA[Diagnostics Reception]]></data>
+  <data name="en_spotpoint100_tooltip"><![CDATA[A & E]]></data>
+  <data name="en_spotpoint126_tooltip"><![CDATA[Hospital Front]]></data>
+
+
+  <data name="en_pano80_title"><![CDATA[Diagnostics Front]]></data>
+  <data name="en_spotpoint103_tooltip"><![CDATA[A & E]]></data>
+  <data name="en_spotpoint104_tooltip"><![CDATA[Diagnostics Reception]]></data>
+  <data name="en_spotpoint105_tooltip"><![CDATA[Hospital Front]]></data>
+
+
+  <data name="en_pano87_title"><![CDATA[Reception]]></data>
+  <data name="en_spotpoint127_tooltip"><![CDATA[Exit]]></data>
+  <data name="en_spotpoint128_tooltip"><![CDATA[OPD Waiting Area]]></data>
+  <data name="en_spotpoint355_tooltip"><![CDATA[Hallway]]></data>
+
+
+  <data name="en_pano107_title"><![CDATA[Hallway View]]></data>
+  <data name="en_spotpoint129_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint130_tooltip"><![CDATA[OPD Waiting Area]]></data>
+  <data name="en_spotpoint356_tooltip"><![CDATA[Front Office]]></data>
+
+
+  <data name="en_pano108_title"><![CDATA[OPD Waiting Area]]></data>
+  <data name="en_spotpoint131_tooltip"><![CDATA[Vital Sign hallway]]></data>
+  <data name="en_spotpoint132_tooltip"><![CDATA[Consulting Room]]></data>
+  <data name="en_spotpoint5005_tooltip"><![CDATA[Reception]]></data>
+
+
+  <data name="en_pano110_title"><![CDATA[Vital Sign hallway]]></data>
+  <data name="en_spotpoint134_tooltip"><![CDATA[OPD Waiting Area]]></data>
+  <data name="en_spotpoint135_tooltip"><![CDATA[Vital Signs Room]]></data>
+  <data name="en_spotpoint136_tooltip"><![CDATA[Treatment Room]]></data>
+
+
+  <data name="en_pano111_title"><![CDATA[OPD Vital Sign Room]]></data>
+  <data name="en_spotpoint137_tooltip"><![CDATA[Hallway]]></data>
+
+
+  <data name="en_pano112_title"><![CDATA[OPD Treatment Room]]></data>
+  <data name="en_spotpoint138_tooltip"><![CDATA[Hallway]]></data>
+
+
+  <data name="en_pano109_title"><![CDATA[Paediatric Consulting Room]]></data>
+  <data name="en_spotpoint133_tooltip"><![CDATA[Waiting Area]]></data>
+
+
+  <data name="en_pano106_title"><![CDATA[Pharmacy]]></data>
+  <data name="en_spotpoint143_tooltip"><![CDATA[Exit]]></data>
+
+
+  <data name="en_pano98_title"><![CDATA[A&E]]></data>
+  <data name="en_spotpoint150_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint151_tooltip"><![CDATA[Ambulance Point]]></data>
+
+
+  <data name="en_pano121_title"><![CDATA[A&E Nurse Station]]></data>
+  <data name="en_spotpoint146_tooltip"><![CDATA[A&E Theater]]></data>
+  <data name="en_spotpoint147_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint148_tooltip"><![CDATA[Accident & Emergency]]></data>
+
+
+  <data name="en_pano122_title"><![CDATA[A&E Theater]]></data>
+  <data name="en_spotpoint149_tooltip"><![CDATA[Nurse Station]]></data>
+
+
+  <data name="en_pano120_title"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint139_tooltip"><![CDATA[Pharmacy]]></data>
+  <data name="en_spotpoint140_tooltip"><![CDATA[Laundry]]></data>
+  <data name="en_spotpoint145_tooltip"><![CDATA[A&E Nurse Station]]></data>
+  <data name="en_spotpoint1259_tooltip"><![CDATA[Reception]]></data>
+  <data name="en_spotpoint5006_tooltip"><![CDATA[Radiology Nurse Station]]></data>
+  <data name="en_spotpoint6559_tooltip"><![CDATA[1st Floor Nurse Station]]></data>
+
+
+  <data name="en_pano86_title"><![CDATA[Diagnostics Reception]]></data>
+  <data name="en_spotpoint167_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint168_tooltip"><![CDATA[Exit]]></data>
+
+
+  <data name="en_pano154_title"><![CDATA[Diagnostics Hallway]]></data>
+  <data name="en_spotpoint169_tooltip"><![CDATA[Radiology Nurse Station]]></data>
+  <data name="en_spotpoint170_tooltip"><![CDATA[Diagnostics Reception]]></data>
+  <data name="en_spotpoint171_tooltip"><![CDATA[Lab Lobby]]></data>
+
+
+  <data name="en_pano155_title"><![CDATA[Lab Lobby]]></data>
+  <data name="en_spotpoint172_tooltip"><![CDATA[Exit]]></data>
+  <data name="en_spotpoint173_tooltip"><![CDATA[Main lab]]></data>
+  <data name="en_spotpoint174_tooltip"><![CDATA[Microbiology lab]]></data>
+
+
+  <data name="en_pano156_title"><![CDATA[Microbiology lab]]></data>
+  <data name="en_spotpoint175_tooltip"><![CDATA[Lab Lobby]]></data>
+
+
+  <data name="en_pano157_title"><![CDATA[Main lab]]></data>
+  <data name="en_spotpoint176_tooltip"><![CDATA[Lab Lobby]]></data>
+
+
+  <data name="en_pano158_title"><![CDATA[Radiology Nurse Station]]></data>
+  <data name="en_spotpoint177_tooltip"><![CDATA[Diagnostics Hallway]]></data>
+  <data name="en_spotpoint178_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint181_tooltip"><![CDATA[Ultrasound]]></data>
+  <data name="en_spotpoint187_tooltip"><![CDATA[CT Scan Hallway]]></data>
+  <data name="en_spotpoint188_tooltip"><![CDATA[Medical Imaging Lobby]]></data>
+  <data name="en_spotpoint236_tooltip"><![CDATA[1st Floor Hallway]]></data>
+
+
+  <data name="en_pano159_title"><![CDATA[Ultrasound]]></data>
+  <data name="en_spotpoint182_tooltip"><![CDATA[Nurse Station]]></data>
+
+
+  <data name="en_pano183_title"><![CDATA[Medical Imaging Lobby]]></data>
+  <data name="en_spotpoint209_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint210_tooltip"><![CDATA[MRI Suite]]></data>
+  <data name="en_spotpoint211_tooltip"><![CDATA[MRI Control Room]]></data>
+  <data name="en_spotpoint214_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint219_tooltip"><![CDATA[Fluoriscopy suite]]></data>
+
+
+  <data name="en_pano189_title"><![CDATA[MRI Suite]]></data>
+  <data name="en_spotpoint213_tooltip"><![CDATA[Lobby]]></data>
+
+
+  <data name="en_pano190_title"><![CDATA[MRI Control Room]]></data>
+  <data name="en_spotpoint212_tooltip"><![CDATA[Lobby]]></data>
+
+
+  <data name="en_pano191_title"><![CDATA[Fluoriscopy suite]]></data>
+  <data name="en_spotpoint220_tooltip"><![CDATA[Lobby]]></data>
+  <data name="en_spotpoint221_tooltip"><![CDATA[Control Room]]></data>
+
+
+  <data name="en_pano192_title"><![CDATA[Fluoriscopy Control Room]]></data>
+  <data name="en_spotpoint222_tooltip"><![CDATA[Fluoriscopy suite]]></data>
+
+
+  <data name="en_pano193_title"><![CDATA[Medical Imaging Hallway]]></data>
+  <data name="en_spotpoint215_tooltip"><![CDATA[Lobby]]></data>
+  <data name="en_spotpoint216_tooltip"><![CDATA[X-Ray Suite]]></data>
+  <data name="en_spotpoint217_tooltip"><![CDATA[X-Ray Control Room]]></data>
+  <data name="en_spotpoint218_tooltip"><![CDATA[Mammography]]></data>
+
+
+  <data name="en_pano194_title"><![CDATA[Mammography]]></data>
+  <data name="en_spotpoint223_tooltip"><![CDATA[Lobby]]></data>
+
+
+  <data name="en_pano195_title"><![CDATA[X-Ray Suite]]></data>
+  <data name="en_spotpoint224_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint225_tooltip"><![CDATA[Control Room]]></data>
+
+
+  <data name="en_pano196_title"><![CDATA[X-Ray Control Room]]></data>
+  <data name="en_spotpoint226_tooltip"><![CDATA[X-Ray Suit]]></data>
+
+
+  <data name="en_pano197_title"><![CDATA[CT Scan Suite]]></data>
+  <data name="en_spotpoint230_tooltip"><![CDATA[Exit]]></data>
+  <data name="en_spotpoint231_tooltip"><![CDATA[Control Room]]></data>
+
+
+  <data name="en_pano198_title"><![CDATA[CT Control Room]]></data>
+  <data name="en_spotpoint232_tooltip"><![CDATA[CT Suite]]></data>
+  <data name="en_spotpoint233_tooltip"><![CDATA[Lobby]]></data>
+
+
+  <data name="en_pano184_title"><![CDATA[CT Scan Lobby]]></data>
+  <data name="en_spotpoint227_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint228_tooltip"><![CDATA[CT Suite]]></data>
+  <data name="en_spotpoint229_tooltip"><![CDATA[CT Control Room]]></data>
+
+
+  <data name="en_pano234_title"><![CDATA[1st Floor Hallway]]></data>
+  <data name="en_spotpoint243_tooltip"><![CDATA[Radiology Hallway]]></data>
+  <data name="en_spotpoint248_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint357_tooltip"><![CDATA[2nd Floor]]></data>
+  <data name="en_spotpoint792_tooltip"><![CDATA[Boardroom]]></data>
+  <data name="en_spotpoint6358_tooltip"><![CDATA[Antenatal]]></data>
+
+
+  <data name="en_pano237_title"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint249_tooltip"><![CDATA[1st floor Hallway]]></data>
+  <data name="en_spotpoint250_tooltip"><![CDATA[Dialysis]]></data>
+  <data name="en_spotpoint251_tooltip"><![CDATA[Nurse Station]]></data>
+
+
+  <data name="en_pano238_title"><![CDATA[Dialysis]]></data>
+  <data name="en_spotpoint252_tooltip"><![CDATA[Hallway]]></data>
+
+
+  <data name="en_pano239_title"><![CDATA[1st Floor Nurse Station]]></data>
+  <data name="en_spotpoint253_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint256_tooltip"><![CDATA[SCUB]]></data>
+  <data name="en_spotpoint258_tooltip"><![CDATA[Maternity Hallway]]></data>
+  <data name="en_spotpoint283_tooltip"><![CDATA[Post Natal Ward]]></data>
+  <data name="en_spotpoint290_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint291_tooltip"><![CDATA[Ground Floor]]></data>
+
+
+  <data name="en_pano254_title"><![CDATA[SCBU]]></data>
+  <data name="en_spotpoint257_tooltip"><![CDATA[Nurse Station]]></data>
+
+  <data name="en_panogroup262_title"><![CDATA[MATERNITY]]></data>
+
+  <data name="en_pano261_title"><![CDATA[Maternity Hallway]]></data>
+  <data name="en_spotpoint263_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint272_tooltip"><![CDATA[1st Stage Room]]></data>
+  <data name="en_spotpoint358_tooltip"><![CDATA[Delivery Room]]></data>
+  <data name="en_spotpoint359_tooltip"><![CDATA[Theatre]]></data>
+  <data name="en_pano264_title"><![CDATA[Labour Ward Theatre]]></data>
+  <data name="en_spotpoint273_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint275_tooltip"><![CDATA[Delivery Room]]></data>
+  <data name="en_pano265_title"><![CDATA[Delivery Room]]></data>
+  <data name="en_spotpoint276_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint277_tooltip"><![CDATA[1st Stage]]></data>
+  <data name="en_spotpoint278_tooltip"><![CDATA[Theatre]]></data>
+  <data name="en_pano266_title"><![CDATA[1st Floor Theatre]]></data>
+  <data name="en_spotpoint279_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_spotpoint280_tooltip"><![CDATA[Delivery Room]]></data>
+
+
+  <data name="en_pano270_title"><![CDATA[Post Natal Ward]]></data>
+  <data name="en_spotpoint287_tooltip"><![CDATA[Nurse Station]]></data>
+
+
+  <data name="en_pano281_title"><![CDATA[Antenatal]]></data>
+  <data name="en_spotpoint286_tooltip"><![CDATA[1st Floor Hallway]]></data>
+
+
+  <data name="en_pano293_title"><![CDATA[2nd Floor Nurse Station]]></data>
+  <data name="en_spotpoint295_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint304_tooltip"><![CDATA[Main Theatre Hallway]]></data>
+  <data name="en_spotpoint333_tooltip"><![CDATA[ICU Nurse Station]]></data>
+  <data name="en_spotpoint347_tooltip"><![CDATA[Private Wards]]></data>
+  <data name="en_spotpoint6561_tooltip"><![CDATA[2nd Floor Wards]]></data>
+
+  <data name="en_panogroup303_title"><![CDATA[MAIN THEATRE]]></data>
+
+  <data name="en_pano300_title"><![CDATA[Theatre 3]]></data>
+  <data name="en_spotpoint310_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_pano299_title"><![CDATA[Theatre 2]]></data>
+  <data name="en_spotpoint308_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_pano296_title"><![CDATA[Main Theatre Hallway]]></data>
+  <data name="en_spotpoint305_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint306_tooltip"><![CDATA[Theatre 2]]></data>
+  <data name="en_spotpoint307_tooltip"><![CDATA[Theatre 3]]></data>
+
+  <data name="en_panogroup314_title"><![CDATA[GENERAL WARDS]]></data>
+
+  <data name="en_pano312_title"><![CDATA[General Ward Hallway]]></data>
+  <data name="en_spotpoint317_tooltip"><![CDATA[2nd Floor Hallway]]></data>
+  <data name="en_spotpoint319_tooltip"><![CDATA[General Ward]]></data>
+  <data name="en_spotpoint360_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_pano311_title"><![CDATA[2nd Floor Hallway]]></data>
+  <data name="en_spotpoint318_tooltip"><![CDATA[Ward Hallway]]></data>
+  <data name="en_spotpoint336_tooltip"><![CDATA[1st Floor]]></data>
+  <data name="en_pano322_title"><![CDATA[Female Ward]]></data>
+  <data name="en_spotpoint327_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_pano315_title"><![CDATA[General Ward Nurse Station]]></data>
+  <data name="en_spotpoint320_tooltip"><![CDATA[Ward Hallway]]></data>
+  <data name="en_spotpoint321_tooltip"><![CDATA[Male Ward]]></data>
+  <data name="en_spotpoint326_tooltip"><![CDATA[Female Ward]]></data>
+  <data name="en_pano323_title"><![CDATA[Male Ward]]></data>
+  <data name="en_spotpoint328_tooltip"><![CDATA[Nurse Station]]></data>
+
+  <data name="en_panogroup331_title"><![CDATA[INTENSIVE CARE UNIT (ICU)]]></data>
+
+  <data name="en_pano330_title"><![CDATA[ICU]]></data>
+  <data name="en_spotpoint361_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_pano329_title"><![CDATA[ICU Nurse Station]]></data>
+  <data name="en_spotpoint334_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint335_tooltip"><![CDATA[ICU]]></data>
+
+  <data name="en_panogroup342_title"><![CDATA[PRIVATE WARDS]]></data>
+
+  <data name="en_pano337_title"><![CDATA[Private Wards Hallway]]></data>
+  <data name="en_spotpoint348_tooltip"><![CDATA[Nurse Station]]></data>
+  <data name="en_spotpoint350_tooltip"><![CDATA[Semi Private Ward]]></data>
+  <data name="en_spotpoint351_tooltip"><![CDATA[Private Ward]]></data>
+  <data name="en_pano340_title"><![CDATA[Private Ward]]></data>
+  <data name="en_spotpoint353_tooltip"><![CDATA[Hallway]]></data>
+  <data name="en_pano338_title"><![CDATA[Semi Private Ward]]></data>
+  <data name="en_spotpoint352_tooltip"><![CDATA[Hallway]]></data>
+
+
+  <data name="en_pano141_title"><![CDATA[Laundry]]></data>
+  <data name="en_spotpoint144_tooltip"><![CDATA[Exit]]></data>
+
+  <data name="en_panogroup786_title"><![CDATA[TEAMS]]></data>
+
+  <data name="en_pano780_title"><![CDATA[meeting/Boardroom]]></data>
+  <data name="en_pano781_title"><![CDATA[Medical Doctors ]]></data>
+  <data name="en_spotpoint1263_tooltip"><![CDATA[DR. OMATIGA ACHIMUGU GABRIEL]]></data>
+  <data name="en_spotpoint1264_tooltip"><![CDATA[DR. EVAWERE PATIENCE AKPODIKERE]]></data>
+  <data name="en_spotpoint1265_tooltip"><![CDATA[DR. TOLU GIWA-SOWANDE]]></data>
+  <data name="en_spotpoint1266_tooltip"><![CDATA[DR. OMOJOYE  FAYOWOLE .I.]]></data>
+  <data name="en_spotpoint1267_tooltip"><![CDATA[DR. IGBINOVIA IKPONMWOSA SHERIFAT]]></data>
+  <data name="en_spotpoint1268_tooltip"><![CDATA[DR.  OSAHON ERIC OGEDEGBE]]></data>
+  <data name="en_spotpoint1269_tooltip"><![CDATA[DR. BENJAMIN O. UHUNMWANGHO]]></data>
+  <data name="en_spotpoint1270_tooltip"><![CDATA[DR. OSEYOMON OKAIWELE]]></data>
+  <data name="en_spotpoint1271_tooltip"><![CDATA[DR. ORDIA RAPHAEL EVUARHERHE]]></data>
+  <data name="en_pano782_title"><![CDATA[Nurses ]]></data>
+  <data name="en_pano783_title"><![CDATA[Medical Imaging Team]]></data>
+  <data name="en_pano785_title"><![CDATA[Admin/HR Team]]></data>
+
+
+
+
+
+
+  <data name="en_button1tooltip"><![CDATA[VR Developed by i360Limited]]></data>
+  <data name="en_button1onclick143395websiteViewer|websiteViewer|toggle_websitewebsite_url"><![CDATA[http://i360limited.com/]]></data>
+  <data name="en_button1onclick143395websiteViewer|websiteViewer|toggle_websitewebsite_title"><![CDATA[]]></data>
+  <data name="en_controlBar_classiczoomInTip"><![CDATA[Zoom in]]></data>
+  <data name="en_controlBar_classiczoomOutTip"><![CDATA[Zoom out]]></data>
+  <data name="en_controlBar_classicopenFsTip"><![CDATA[Enter fullscreen]]></data>
+  <data name="en_controlBar_classiccloseFsTip"><![CDATA[Exit fullscreen]]></data>
+  <data name="en_controlBar_classicautorotateOnTip"><![CDATA[Start autorotation]]></data>
+  <data name="en_controlBar_classicautorotateOffTip"><![CDATA[Stop autorotation]]></data>
+  <data name="en_controlBar_classicsoundsOnTip"><![CDATA[Start sounds]]></data>
+  <data name="en_controlBar_classicsoundsOffTip"><![CDATA[Stop sounds]]></data>
+  <data name="en_controlBar_classicshowSpotsTip"><![CDATA[Show hotspots]]></data>
+  <data name="en_controlBar_classichideSpotsTip"><![CDATA[Hide hotspots]]></data>
+  <data name="en_controlBar_classicshowThumbnailsTip"><![CDATA[Show thumbnails]]></data>
+  <data name="en_controlBar_classichideThumbnailsTip"><![CDATA[Hide thumbnails]]></data>
+  <data name="en_controlBar_classicdisplayHelpTip"><![CDATA[Show help screen]]></data>
+  <data name="en_controlBar_classichideHelpTip"><![CDATA[Hide help screen]]></data>
+  <data name="en_controlBar_classicdisplayInfoTip"><![CDATA[Show information]]></data>
+  <data name="en_controlBar_classichideInfoTip"><![CDATA[Hide information]]></data>
+  <data name="en_controlBar_classicenterVRTip"><![CDATA[VR mode]]></data>
+  <data name="en_controlBar_classicenterVRNotTip"><![CDATA[VR mode is unavailable]]></data>
+  <data name="en_controlBar_classicdisplayControlsTip"><![CDATA[Show controls]]></data>
+  <data name="en_controlBar_classichideControlsTip"><![CDATA[Hide controls]]></data>
+  <data name="en_prevnexttheme1prevSceneTip"><![CDATA[Previous Scene]]></data>
+  <data name="en_prevnexttheme1nextSceneTip"><![CDATA[Next Scene]]></data>
+  <data name="en_logo2websiteurl"><![CDATA[https://www.beninmedicalcare.com/]]></data>
+  <data name="en_logo2tooltipText"><![CDATA[Open website]]></data>
+  <data name="en_buttontooltip"><![CDATA[Visit Us On Google]]></data>
+  <data name="en_buttononclick144219websiteViewer|websiteViewer|toggle_websitewebsite_url"><![CDATA[https://g.page/benin-medical-care-benin-city?share]]></data>
+  <data name="en_buttononclick144219websiteViewer|websiteViewer|toggle_websitewebsite_title"><![CDATA[]]></data>
+  <data name="en_button2tooltip"><![CDATA[Social Share]]></data>
+  <data name="en_socialButton2social_href"><![CDATA[]]></data>
+  <data name="en_socialButton2tw_via"><![CDATA[]]></data>
+  <data name="en_socialButton2tw_text"><![CDATA[]]></data>
+  <data name="en_socialButton2tw_hashtag"><![CDATA[]]></data>
+  <data name="en_button3tooltip"><![CDATA[Show Information ]]></data>
+  <data name="en_button3onclick147241openurlwebsiteurl"><![CDATA[https://www.beninmedicalcare.com/our-services]]></data>
+  <data name="en_socialButton1social_href"><![CDATA[]]></data>
+  <data name="en_socialButton1fb_appid"><![CDATA[]]></data>
+  <data name="en_socialButton1fb_ref"><![CDATA[]]></data>
+  <data name="en_floorPlandisplay_close_text"><![CDATA[Close]]></data>
+  <data name="en_socialShareclose_text"><![CDATA[Close]]></data>
+  <data name="en_socialShareembed_text"><![CDATA[Copy paste this code in your page to embed this virtual tour]]></data>
+  <data name="en_socialShareembed_width_label"><![CDATA[Width]]></data>
+  <data name="en_socialShareembed_height_label"><![CDATA[Height]]></data>
+  <data name="en_contextmenuopenwebsitelabel1"><![CDATA[BENIN MEDICAL CARE (BMC)]]></data>
+  <data name="en_contextmenuwebsiteurl1"><![CDATA[https://www.beninmedicalcare.com/]]></data>
+  <data name="en_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
+  <data name="en_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
+  <data name="en_contextmenuopenVrLabel"><![CDATA[Enter VR mode]]></data>
+  <data name="en_contextmenunormallabel"><![CDATA[Normal View]]></data>
+  <data name="en_contextmenufisheyelabel"><![CDATA[Fisheye View]]></data>
+  <data name="en_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
+  <data name="en_contextmenustereographiclabel"><![CDATA[Stereographic View]]></data>
+  <data name="en_contextmenupanninilabel"><![CDATA[Pannini View]]></data>
+  <data name="en_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
+  <data name="en_contextmenufisheyeballlabel"><![CDATA[Fisheye Ball View]]></data>
+  <data name="en_descriptiondescription_title"><![CDATA[ABOUT BMC]]></data>
+  <data name="en_descriptiondisplay_close_text"><![CDATA[Close]]></data>
+  <data name="en_galleryplay_text"><![CDATA[Play / Pause]]></data>
+  <data name="en_gallerynavprev_text"><![CDATA[Previous]]></data>
+  <data name="en_gallerynavnext_text"><![CDATA[Next]]></data>
+  <data name="en_galleryfullscreen_text"><![CDATA[Fullscreen mode]]></data>
+  <data name="en_galleryclose_text"><![CDATA[Close]]></data>
+  <data name="en_gallerypicture_title3"><![CDATA[]]></data>
+  <data name="en_gallerypicture_caption3"><![CDATA[]]></data>
+  <data name="en_description1display_close_text"><![CDATA[Close]]></data>
+  <data name="en_websiteViewerfullscreen_text"><![CDATA[Fullscreen mode]]></data>
+  <data name="en_websiteViewerclose_text"><![CDATA[Close]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+  <data name="en_project_description"><![CDATA[<p align="center" style="text-align:center"><font size="4">Welcome to a VirtualTour of Benin Medical Care Hospital (BMC), Located at the hearth of Benin Cityof Edo State, Nigeria. Benin Medical Care was commissioned on the 1st Day ofNovember 2019 by his Excellency Mr. Godwin Nogheghase Obaseki, Governor of EdoState, To the Glory of God and benefit of humanity. BMC offers full range ofmedical care and it is committed to addressing health challenges of Nigeriansthrough cutting edge technology and patient-centric approaches. The Hospitaloffers a whole array of medical services which includes:</font><o:p></o:p></p><p align="center" style="text-align:center"><br></p><div align="center"><table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:double #5B9BD5 1.5pt; mso-border-themecolor:accent1;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt; mso-border-insideh:1.5pt double #5B9BD5;mso-border-insideh-themecolor:accent1; mso-border-insidev:1.5pt double #5B9BD5;mso-border-insidev-themecolor:accent1"> <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Emergency Services</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-left:none;mso-border-left-alt:double #5B9BD5 1.5pt;  mso-border-left-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Medical Imaging</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-left:none;mso-border-left-alt:double #5B9BD5 1.5pt;  mso-border-left-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Orthopaedics</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td> </tr> <tr style="mso-yfti-irow:1">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-top:none;mso-border-top-alt:double #5B9BD5 1.5pt;  mso-border-top-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Laboratory Services</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Nephrology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Paediatrics</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td> </tr> <tr style="mso-yfti-irow:2">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-top:none;mso-border-top-alt:double #5B9BD5 1.5pt;  mso-border-top-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Cardiology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Obstetrics and Gynaecology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Pharmacy</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td> </tr> <tr style="mso-yfti-irow:3">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-top:none;mso-border-top-alt:double #5B9BD5 1.5pt;  mso-border-top-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Dental Service</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Oncology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Urology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td> </tr> <tr style="mso-yfti-irow:4">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-top:none;mso-border-top-alt:double #5B9BD5 1.5pt;  mso-border-top-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Family Medicine</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Ophthalmology</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Internal Medicine</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td> </tr> <tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes">  <td width="208" valign="top" style="width:155.8pt;border:double #5B9BD5 1.5pt;  mso-border-themecolor:accent1;border-top:none;mso-border-top-alt:double #5B9BD5 1.5pt;  mso-border-top-themecolor:accent1;padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><o:p><span style="text-decoration:none">&nbsp;</span></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><a href="https://www.beninmedicalcare.com/our-services"><span style="color:#404040;  mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;  mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:100.0%;  mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><span style="color:windowtext">Geriatrics</span></span></a></span></b></span><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:text1;mso-themetint:191;mso-style-textfill-fill-color:  #404040;mso-style-textfill-fill-themecolor:text1;mso-style-textfill-fill-alpha:  100.0%;mso-style-textfill-fill-colortransforms:&quot;lumm=75000 lumo=25000&quot;"><o:p></o:p></span></b></span></p>  </td>  <td width="208" valign="top" style="width:155.85pt;border-top:none;border-left:  none;border-bottom:double #5B9BD5 1.5pt;mso-border-bottom-themecolor:accent1;  border-right:double #5B9BD5 1.5pt;mso-border-right-themecolor:accent1;  mso-border-top-alt:double #5B9BD5 1.5pt;mso-border-top-themecolor:accent1;  mso-border-left-alt:double #5B9BD5 1.5pt;mso-border-left-themecolor:accent1;  padding:0in 5.4pt 0in 5.4pt">  <p align="center" style="margin-bottom:0in;margin-bottom:.0001pt;  text-align:center;line-height:normal"><span><b style="mso-bidi-font-weight:normal"><span style="color:#404040;mso-themecolor:  text1;mso-themetint:191;mso-style-textfill-fill-color:#404040;mso-style-textfill-fill-themecolor:  text1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:  &quot;lumm=75000 lumo=25000&quot;"><o:p><span style="text-decoration:none">&nbsp;</span></o:p></span></b></span></p>  </td> </tr></tbody></table></div><p align="center" style="text-align:center"><o:p>&nbsp;</o:p></p><p align="center" style="text-align:center"><b><font size="4">CONTACTS</font></b></p><p align="center" style="text-align:center"><o:p></o:p></p><p align="center" style="text-align:center">080113894440 | 08169023992<o:p></o:p></p><p align="center" style="text-align:center"></p><p align="center" style="text-align:center"><a href="mailto:contact@beninmedicalcare.com">contact@beninmedicalcare.com</a> <span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span>| <span style="mso-spacerun:yes">&nbsp;</span><a href="http://www.beninmedicalcare.com">www.beninmedicalcare.com</a><o:p></o:p></p>]]></data>
+
+
+
+
+
+
+
+
+
+  <data name="en_spotpoint1272_description"><![CDATA[<div><font color="#cccccc">The fleet ground ambulances are specially equipped to provide critical care or advanced life-saving support for all</font><font color="#cccccc">&nbsp;patients</font><font color="#ffffff" style="text-decoration: underline;">.</font></div>]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <data name="en_spotpoint1263_description"><![CDATA[<div><p style="text-align:justify"><b><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee"><u>DR. OMATIGA ACHIMUGU GABRIEL&nbsp;</u><o:p></o:p></font></span></b></p><p style="text-align:justify"><b><span style="font-size:12.0pt;line-height:107%"><u><font color="#eeeeee"><br></font></u></span></b></p></div><div><p style="text-align:justify"><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee">A graduate of medicine and surgery from the university ofIbadan (2005). Got his fellowship of the National Post-graduate College ofNigeria 2016 and master degree in Biomedical Engineering UK (2018). <o:p></o:p></font></span></p><p style="text-align:justify"><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee"><br></font></span></p><p style="text-align:justify"><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee">Have been practicing as a Clinical Radiologist since 2016 andmostly works as Consultant Radiologist <o:p></o:p></font></span></p><p style="text-align:justify"><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee"><br></font></span></p><p style="text-align:justify"><span style="font-size:12.0pt;line-height:107%"><font color="#eeeeee">He is currently the head of Diagnostics at Benin Medical Care, Benin City, Edo State.</font><o:p></o:p></span></p></div><div><p><o:p></o:p></p></div>]]></data>
+  <data name="en_spotpoint1264_description"><![CDATA[<font color="#eeeeee"><b><u>DR. EVAWERE PATIENCE AKPODIKERE</u></b><br><br><br></font><div><font color="#eeeeee">She is an adept paediatrician with 13 solid years of medical practice experience including 8 years of dedicated child health specialization and practice. <br><br>She had her undergraduate medical education in the University of Benin School of Medicine in 2007 and subsequently obtained the post-graduate fellowship of the West Africa College of Physicians. <br><br>She honed her skills in effective communication with patients, their relatives and other medical professionals in her management team. This enables easy flow of information that culminates in good patient outcomes. She is also a very detail oriented professional; this makes her patients to be assured of a wholistic care. <br><br>Her work experience includes her houseman-ship at Central Hospital Warri from 2007 -2008, where she perfected her skills in bedside procedures. Between May 2008 – June 2009. She went for her National Youth Service and served as an NYSC Doctor at the medical reception station of the Mambila barracks of the Nigerian Army. She later went on to serve as a medical officer in the Institute of Human Virology July 2009, where she worked with pregnant women in the PMTCT Clinic (Prevention of Mother to Child Transmission of HIV). This later transitioned her in working for the University of Benin Teaching Hospital in the same capacity from October 2009 – 2012. <br><br>However, she had always nursed a passion for child health, and had passed the primaries required for commencing specialist, therefore, immediately she got placement, she proceeded to do her specialization in paediatrics which was completed in 2019. <br><br>At the end of her residency programme while awaiting her dissertation presentation she did a few locum paediatrician job at St. Philomena Hospitals, Lily Hospitals Limited Benin and the Women Health and Action Research Centre attending to paediatric inpatients and outpatients. <br><br>When she is not practicing medicine, she enjoys experimenting with various recipes, she also enjoys watching thought provoking movies. <br><br>She is married with 3 lovely children. <br><br> She is currently a Consultant Paediatrician at Benin Medical Care, Benin City, Edo State.  </font><p style="text-align:justify"></p></div>]]></data>
+  <data name="en_spotpoint1265_description"><![CDATA[<p><b><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><u>DR. TOLU GIWA-SOWANDE</u><o:p></o:p></font></span></b></p><p><b><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><u><font color="#eeeeee"><br></font></u></span></b></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee">Dr. Tolu Giwa-Sowande has always been passionate about caring for people and solving human medical problems since she was a little girl. This influenced her choiceof studying Medicine and Surgery at the University of Ibadan where she graduated 8 years ago with the M.B.;B.S. degree.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee">She also holds a Masters in Public Health degree from the University of Liverpool and has different professional certifications including Basic Life Support, Leadership and Management in Health amongst others.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee">She is astrong team player, hardworking, dedicated and a go-getter. She is known for her patience, dedication and attention to detail for each individual patient case. She loves to treat her patients with utmost kindness and ensure they getthe best care at all times.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee">She is agreat public speaker and enjoys cooking, reading and traveling.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee">Her major interests include women health and lifestyle medicine. She hopes to continue to use her medical skills to in order to further the cause of medicine, helping to improve patient outcomes and encourage the next generation of physicians.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#eeeeee"><br></font></span></p><span style="font-size:12.0pt;line-height:106%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font color="#eeeeee">She is currently a Medical Officer at Benin Medical Care, Benin City, Edo State.&nbsp; &nbsp;</font></span>]]></data>
+  <data name="en_spotpoint1266_description"><![CDATA[<div><b><span style="font-size:12.0pt;line-height:106%"><u><font color="#eeeeee">DR. OMOJOYE&nbsp; FAYOWOLE .I.</font></u></span></b></div><div><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">Dr. Omojoye Fayowole .l. is a dedicated Christian, an ardent sport fan and a strong lover of the political world that is deeply passionate about the sick; he loves to make people smile/laugh no matter their health challenge(s) because he believes it is a good therapy for fast and complete recovery.&nbsp;<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">He is a general practitioner that graduated from Igbinedion University Okada, 2012. He did his Internship at University of Port Harcourt Teaching Hospital, Choba and was privileged to do his NYSC at Area Command Nsukka Police Clinic, Enugu State. He did his secondary education at Delta Careers College, Warri.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">Furthermore, he held many leadership positions while in school and during NYSC because of his good managerial skills, he has been involved with series of medical outreach and he has worked in some private hospitals in Nsukka, Benin andWarri.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">He is currently a general practitioner in Benin Medical Care, Benin City, Edo State.</font></span></p></div>]]></data>
+  <data name="en_spotpoint1267_description"><![CDATA[<div><b><span style="font-size:12.0pt;line-height:106%"><u><font color="#eeeeee">DR. IGBINOVIA IKPONMWOSA SHERIFAT</font></u></span></b></div><div><b><span style="font-size:12.0pt;line-height:106%"><u><font color="#eeeeee"><br></font></u></span></b></div><div><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">Dr. Igbinovia Ikponmwonsa Sherifat finished from Igbinedion University Okada in2015. The role of a doctor has been one of her passion since childhood and being one, is one of the most fulfilling job she could have undertaken. <o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">She is hardworking, passionate and enthusiastic about her job. She loves to meet the need of her patients in any little way she can, and nothing gives her joy than to see her patients recover fully. <o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">She is a team player, always striving to achieve the highest standard possible at any given task or in any situation. She has acquired a lot of skills on the job and she is still in the process of learning. <o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">Her hobbies are dancing, reading and baking and she loves good gist too. <o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee">She is hoping to be a psychiatrist soon enough because she believes mental health is a vital part of a man and its importance should not be ignored.<o:p></o:p></font></span></p><p><span style="font-size:12.0pt;line-height:106%"><font color="#eeeeee"><br></font></span></p><font color="#eeeeee"><span style="font-size: 12pt; line-height: 106%; font-family: Calibri, sans-serif;">She is currently a Medical Officer at BeninMedical Care, Benin City, Edo State.&nbsp; &nbsp;</span><br></font><br></div>]]></data>
+  <data name="en_spotpoint1268_description"><![CDATA[<font color="#eeeeee">DR. OSAHON ERIC OGEDEGBE<br> <br><br>Dr. Osahon Eric Ogedegbe is a medical graduate of the University of Benin (M.B.B.S) and did his medical internship at the University of Benin Teaching Hospital (UBTH) before National Service in 2000. <br><br>Certified by the International SOS Johannesburg Training Center, South Africa in keeping with the curriculum of the American Heart Association and American College of Surgeons, he is a provider of advanced cardiovascular, advanced trauma, international trauma and pediatric advanced life support and instructor. <br><br>Prior to joining BMC with his expertise, he worked as an emergency physician with International SOS, the world’s leading provider of medical services in the Oil and Gas Industry while also providing occupational health services from 2014 to 2019. <br><br>His experience also cuts into the government health sector having worked with Kogi and Bayelsa State Hospitals Management Board, rising to Chief Medical Officer and was in charge of several secondary health institutions on different occasions. He has exposure within and outside Nigeria, from West Africa, South Africa to Singapore. <br><br>An advocate of high value care, evidence-based medicine, clinical excellence and best practices, he has a deep sense of dedication and commitment to duty with “emergency preparedness” as his mantra and demonstrates the will and the skill to deliver optimal care. <br><br>When not working, reading, music and quality family time are his hobbies. He is married with three adorable Kids. <br><br>He is presently head of the accident and emergency department at Benin Medical Care (BMC).</font><div></div>]]></data>
+  <data name="en_spotpoint1269_description"><![CDATA[<b><u><font color="#f3f3f3">DR. BENJAMIN O. UHUNMWANGHO&nbsp;</font></u></b><div><font color="#f3f3f3"><br></font></div><div><font color="#f3f3f3"><br></font></div><div><font color="#f3f3f3">Dr. Benjamin O. Uhunmwangho (MB;BS, MPH, MWACS) is a graduate of the prestigious University of Benin, Benin City (UNIBEN), where he obtained his medical degree (MB;BS) and then proceeded to obtain a Master of Public Health (MPH) in the same University.&nbsp;</font><div><div><div><font color="#f3f3f3"><br>Having worked few years with one of the foremost HMO’s in the country where he garnered experience on its operations, he began his specialty programme in the department of Obstetrics and Gynaecology, University of Benin Teaching Hospital (UBTH) where he obtained his membership in both National Post-graduate Medical College of Nigeria (NPMCN) and West African College of Surgeons (WACS). <br><br>He brings his wealth of experience to play in his professional endeavors and he sees no limitations when his mind is determined to achieve. He is married with adorable kids. <br><br>He is currently a Senior Medical Officer (Obstetrics and Gynaecology) at Benin Medical Care, Benin City, Edo State.  </font></div></div></div></div>]]></data>
+  <data name="en_spotpoint1270_description"><![CDATA[<font color="#eeeeee"><b><u>DR. OSEYOMON OKAIWELE</u></b><br><br><br>Dr. Oseyomon Okaiwele graduated from the university of Benin, Benin City with a Bachelor of Medicine and Bachelor of Surgery (MB.BS) in 2009. <br><br>After his mandatory internship and National Youth Service, the desire for self-improvement led him to undergo post-graduate specialization at the University of Benin Teaching Hospital. He completed a fellowship of the National Post-graduate Medical College of Nigeria in Obstetrics and Gynaecology in 2017. <br><br>He is currently a Consultant Obstetrician/Gynaecologist at Benin Medical Care, Benin City, Edo State.  Description:<br>Brief Description and professional historyBrief  Description and professional history</font>]]></data>
+  <data name="en_spotpoint1271_description"><![CDATA[<font color="#eeeeee"><b><u>DR. ORDIA RAPHAEL EVUARHERHE MBBS, FWACP-FM, Cert LMH</u></b><br><br>A trained physician in the provision of continuous, comprehensive and coordinated care across all ages and specialties with exceptional doctor patient relationship. <br><br>He obtained his MBBS from the Prestigious University of Benin, Benin City and had his post-graduate training in Family Medicine in the University of Benin Teaching Hospital. <br><br>He was formerly the Head of Department of Family Medical/Primary care in Lily Hospitals Limited Warri, where he was involved in the training of resident doctors in Family Medicine and was also the coordinator of internship programme. <br><br> Currently, he is the Head Clinicals and Acting Chief Executive Officer of Benin Medical Care, Benin City, Edo State.  </font><p style="text-align:justify"></p>]]></data>
+
+
+
+
+</krpano>
